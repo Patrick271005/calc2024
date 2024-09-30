@@ -30,6 +30,10 @@ public class Calc {
 
                 mul(firstNum,secondNum);
                 break;
+            case"div":
+
+                div(firstNum,secondNum);
+                break;
             default:
                 System.out.println("Invalid operation");
                 break;
@@ -55,6 +59,13 @@ public class Calc {
     }
     public static void mul(double first,double second) {
         double result = first * second;
+        System.out.println("the total is " + result);
+
+
+    }
+
+    public static void div(double first,double second) {
+        double result = first / second;
         System.out.println("the total is " + result);
 
 
