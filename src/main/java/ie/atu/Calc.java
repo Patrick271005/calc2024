@@ -22,6 +22,10 @@ public class Calc {
 
                 add(firstNum,secondNum);
                 break;
+            case"sub":
+                sub(firstNum,secondNum);
+                break;
+
             default:
                 System.out.println("Invalid operation");
                 break;
@@ -38,15 +42,19 @@ public class Calc {
 
 
     }
-}
-                double sum = firstNum + secondNum;
-                System.out.println("The sum is: "+sum);
-                break;
-
-
-        }
+    public static void sub(double first,double second) {
+        double result = first - second;
+        System.out.println("the total is " + result);
 
 
     }
 }
+
+
+
+
+
+
+
+
 
