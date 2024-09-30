@@ -19,6 +19,26 @@ public class Calc {
         String operator = sc1.next();
         switch(operator){
             case"add":
+
+                add(firstNum,secondNum);
+                break;
+            default:
+                System.out.println("Invalid operation");
+                break;
+
+        }
+
+
+    }
+
+
+    public static void add(double first,double second) {
+        double result = first + second;
+        System.out.println("the total is " + result);
+
+
+    }
+}
                 double sum = firstNum + secondNum;
                 System.out.println("The sum is: "+sum);
                 break;
@@ -29,3 +49,4 @@ public class Calc {
 
     }
 }
+
