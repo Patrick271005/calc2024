@@ -15,7 +15,7 @@ public class Calc {
         double secondNum = sc1.nextDouble();
         System.out.println("You entered " + secondNum);
 
-        System.out.println("choose a operator: (add,sub,mul,div)");
+        System.out.println("choose a operator: (add,sub,mul,div,exp)");
         String operator = sc1.next();
         switch(operator){
             case"add":
@@ -29,6 +29,14 @@ public class Calc {
             case"mul":
 
                 mul(firstNum,secondNum);
+                break;
+            case"div":
+
+                div(firstNum,secondNum);
+                break;
+            case"exp":
+
+                exp(firstNum,secondNum);
                 break;
             default:
                 System.out.println("Invalid operation");
@@ -57,6 +65,19 @@ public class Calc {
         double result = first * second;
         System.out.println("the total is " + result);
 
+
+    }
+
+    public static void div(double first,double second) {
+        double result = first / second;
+        System.out.println("the total is " + result);
+
+
+    }
+
+    public static void exp(double first,double second ) {
+        double result = Math.pow(first,second);
+        System.out.println("the total is " + result);
 
     }
 }
