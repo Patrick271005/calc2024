@@ -19,6 +19,7 @@ public class Calc {
         String operator = sc1.next();
         switch(operator){
             case"add":
+
                 add(firstNum,secondNum);
                 break;
             default:
@@ -38,3 +39,14 @@ public class Calc {
 
     }
 }
+                double sum = firstNum + secondNum;
+                System.out.println("The sum is: "+sum);
+                break;
+
+
+        }
+
+
+    }
+}
+
