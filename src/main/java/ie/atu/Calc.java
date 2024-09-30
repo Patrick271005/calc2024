@@ -26,6 +26,10 @@ public class Calc {
 
                 sub(firstNum,secondNum);
                 break;
+            case"mul":
+
+                mul(firstNum,secondNum);
+                break;
             default:
                 System.out.println("Invalid operation");
                 break;
@@ -45,6 +49,12 @@ public class Calc {
 
     public static void sub(double first,double second) {
         double result = first - second;
+        System.out.println("the total is " + result);
+
+
+    }
+    public static void mul(double first,double second) {
+        double result = first * second;
         System.out.println("the total is " + result);
 
 
